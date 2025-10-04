@@ -10,6 +10,15 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
+                    
+                    <!-- FIXED: Use correct route name -->
+                    <div class="mt-6">
+                        <h3 class="text-lg font-medium mb-4">Quick Actions</h3>
+                        <a href="{{ route('inventory.index') }}" 
+                           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            📦 Manage Inventory
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
